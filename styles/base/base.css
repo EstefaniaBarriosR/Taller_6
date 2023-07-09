@@ -1,0 +1,47 @@
+@import url(_reset.css);
+@import url(_variables.css);
+
+body{
+    background: var(--colorFondo);
+}
+
+.encabezado{
+    width: wh;
+    max-height: 50px;
+    display: flex;
+    background-color: var(--colorPrincipal);
+    padding: 20px 20px;
+    color: white;
+    justify-content: space-around;
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+}
+
+.encabezado__logo{
+    width: 3rem;    
+}
+
+.encabezado__lista{
+    display: flex;
+    text-align: center;
+}
+
+.encabezado__lista-item{
+    font-size: 1.5rem;
+    padding: 5px 20px;
+    font-family: var(--secondaryFont);   
+    margin: 10px 0px; 
+}
+
+.encabezado__lista-selectedItem{
+    font-size: 1.5rem;
+    padding: 5px 20px;
+    font-family: var(--secondaryFont);   
+    margin: 10px 0px; 
+    text-decoration: underline; 
+}
+
+.encabezado__lista-item:hover{
+    text-decoration: underline;    
+}
+

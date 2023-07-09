@@ -1,0 +1,19 @@
+.input__select{
+    width: 100%;    
+    box-sizing: border-box;
+    font-size: 0.95rem;        
+    margin-top: 20px;
+    border: 1px solid #BABABA;
+    padding: 10px 10px; 
+}
+
+.input__select:focus{
+    border: 2px solid var(--colorPrincipal);
+}
+
+.select-label{    
+    color: var(--colorPrincipal);
+    position: relative;
+    font-size: 0.75rem;
+    top: 0.75rem;
+}

@@ -1,0 +1,10 @@
+:root{
+    --principalFont: 'Roboto Mono', monospace;  
+    --secondaryFont: 'Abel', sans-serif;    
+    
+    --colorFondo: #FAFAFA;    
+    --colorPrincipal: #22b372;
+    --colorPrincipalOpaco: #18a968;
+
+    --colorFormulario: #FFF;
+}

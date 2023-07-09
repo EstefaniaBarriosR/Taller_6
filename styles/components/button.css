@@ -1,0 +1,18 @@
+.form-boton{
+    background-color: var(--colorPrincipal);
+    font-family: var(--secondaryFont);
+    max-width: 300px;
+    width: 50%;
+    margin-top: 20px;
+    color: #FFFFFF;
+    font-size: 1.2em;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-boton:hover{
+    cursor: pointer;
+    transition: all 0.5s;
+    transform: scale(1.05);
+}
+

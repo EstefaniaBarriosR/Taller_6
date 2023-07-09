@@ -1,0 +1,79 @@
+.tarjetaRegistro{
+    width: 50%;        
+    text-align: center;    
+    font-family: var(--principalFont);
+}
+
+.input-container {    
+    width: 100%;
+    box-sizing: border-box;    
+    position: relative;  
+    padding: 0px 20px;
+    margin-top: 10px;    
+    text-align: left;
+}
+
+.input__text {
+    width: 100%;    
+    box-sizing: border-box;
+    font-size: 0.95rem;    
+    margin-top: 20px;
+    border-bottom: 1px solid #BABABA;
+    padding: 10px 10px;        
+}
+
+.input-container-medio{ 
+    display: inline-block;   
+    text-align: center;
+    width: 45%;
+    box-sizing: border-box;    
+    position: relative;  
+    padding: 0px 20px;
+    margin-top: 10px;
+    font-family: var(--principalFont);
+    text-align: left;
+}
+
+#input-telefono{
+    width: 95%;      
+}
+
+#input-edad{
+    width: 95%;    
+}
+
+.input__text::placeholder{
+    outline: none;
+}
+
+.input__text::placeholder {
+    visibility: hidden;
+    color: #00000000;
+}
+
+.input__text:focus{
+    outline: none;
+}
+
+.input-label{
+    position: absolute;
+    top: 2rem;
+    left: 1.5rem;
+    transition: all 0.25s;
+    color: #ABABAB;
+}
+
+.input__text:not(:placeholder-shown), .input__text:focus{
+    border-bottom: 1px solid var(--colorPrincipal);
+}
+
+.input__text:not(:placeholder-shown) + .input-label, .input__text:focus + .input-label{
+    top: 0.8rem;
+    color: var(--colorPrincipal);
+    font-size: 0.75rem;
+    transition: all 0.25s;
+}
+
+.input__menssage-error {
+    display: none;
+}

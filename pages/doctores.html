@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="icon" href="../img/icon.ico" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="../styles/base/base.css">    
+    <link rel="stylesheet" href="../styles/registro.css">
+    <link rel="stylesheet" href="../styles/components/textField.css">
+    <link rel="stylesheet" href="../styles/components/selectField.css">
+    <link rel="stylesheet" href="../styles/components/button.css">
+
+    <title>Registro - Cliente</title>
+</head>
+
+<body>
+    <header class="encabezado">
+        <img src="../img/logo.png" class="encabezado__logo" alt="Logo medicina">
+        <nav>
+            <ul class="encabezado__lista">
+                <li class="encabezado__lista-item"><a href="#">Home</a>
+                </li>
+                <li class="encabezado__lista-item"><a href="./pacientes.html">Pacientes</a></li>
+                <li class="encabezado__lista-selectedItem"><a href="./doctores.html">Doctores</a></li>
+                <li class="encabezado__lista-item"><a href="#">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contenido">
+        
+            <section class="tarjetaRegistro">
+            <h2 class="title">Registrar Doctor</h2>
+            <form class="form__RegistroDoctor" id="form__RegistroDoctor" >
+                <div class="input-container">
+                    <input
+                        type="text"
+                        id="input-nombre"
+                        label="Nombre"
+                        class="input__text"
+                        placeholder="Nombre"
+                        
+                        data-nombre
+                    />
+                    <label for="input-nombre" class="input-label">Nombre</label>
+                    <span class="input__menssage-error">Este campo es obligatorio.</span>
+                </div>
+                <div class="input-container">
+                    <input
+                        type="text"
+                        id="input-apellido"
+                        label="Apellido"
+                        class="input__text"
+                        placeholder="Apellido"
+                        
+                        data-apellido
+                    />
+                    <label for="input-apellido" class="input-label">Apellido</label>
+                    <span class="input__menssage-error">Este campo es obligatorio.</span>
+                </div>
+                <div class="input-container">
+                    <input
+                        type="text"
+                        id="input-id"
+                        label="Identificación"
+                        class="input__text"
+                        placeholder="Identificación"
+                        
+                        data-id
+                    />
+                    <label for="input-id" class="input-label">Identificación</label>
+                    <span class="input__menssage-error">Este campo es obligatorio.</span>
+                </div>
+                <div class="input-container">
+                    <label for="input-id" class="select-label">Especialidad</label>
+                    <select
+                        type="text"
+                        id="input-especialidad"
+                        label="Especialidad"
+                        class="input__select"
+                        placeholder="Seleccione"
+                        
+                        data-especialidad
+                    >
+                    <option value="" selected disabled>-Selecciona una opcion-</option>
+                    <option value="Medicina General">Medicina General</option>
+                    <option value="Cardiología">Cardiología</option>
+                    <option value="Medicina Interna">Medicina Interna</option>
+                    <option value="Dermatología">Dermatología</option>
+                    <option value="Rehabilitación Fisica">Rehabilitación Fisica</option>
+                    <option value="Psicología">Psicología</option>
+                    <option value="Odontología">Odontología</option>
+                    <option value="Radiología">Radiología</option>
+                    </select>                                        
+                </div>
+                <div class="input-container">
+                    <input
+                        type="text"
+                        id="input-consultorio"
+                        label="Consultorio"
+                        class="input__text"
+                        placeholder="Consultorio"
+                        
+                        data-consultorio
+                    />
+                    <label for="input-consultorio" class="input-label">Consultorio</label>
+                    <span class="input__menssage-error">Este campo es obligatorio.</span>
+                </div>
+                <div class="input-container">
+                    <input
+                        type="text"
+                        id="input-correo"
+                        label="Correo"
+                        class="input__text"
+                        placeholder="Correo"
+                        
+                        data-correo
+                    />
+                    <label for="input-correo" class="input-label">Correo</label>
+                    <span class="input__menssage-error">Este campo es obligatorio.</span>
+                </div>               
+                
+                <button class="form-boton" type="submit" id="BtnRegistro">Registrar</button>
+            </form>              
+        </section>
+
+        <section class="Registrados">
+            <h2 class="title">Doctores Registrados</h2>
+            <div class="TablaDatos">
+                <table id="TabDatosDoctores" style="width: 100%;">   
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Id</th>
+                            <th>Especialidad</th>
+                            <th>Consultorio</th>
+                            <th>Correo</th>
+                        </tr>
+                    </thead>            
+                    <tbody>
+                                               
+                    </tbody>                 
+                </table>
+            </div>
+        </section>      
+        
+    </main>  
+
+    <script src="../js/doctores.js"></script>
+    
+</body>
+</html>
